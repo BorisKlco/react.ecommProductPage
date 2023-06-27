@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header li {
+  margin-inline: 1rem;
+}
+
+header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .card {
+  height: 1.25rem;
+}
+
+header .profileImg {
+  height: 3rem;
+}

@@ -1,10 +1,12 @@
 import './Navbar.css';
+import { CiMenuBurger } from 'react-icons/ci';
 
 function Navbar() {
   return (
     <>
       <header>
-        <div className="left">
+        <nav className="left">
+          <CiMenuBurger className="mobile" />
           <img src="/images/logo.svg" alt="logo" />
           <ul>
             <li>Collections</li>
@@ -13,9 +15,9 @@ function Navbar() {
             <li>About</li>
             <li>Contact</li>
           </ul>
-        </div>
+        </nav>
         <div className="right">
-          <img className="card" src="/images/icon-cart.svg" alt="cart" />
+          <img className="cart" src="/images/icon-cart.svg" alt="cart" />
           <img
             className="profileImg"
             src="/images/image-avatar.png"

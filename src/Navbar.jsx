@@ -1,5 +1,6 @@
-import './Navbar.css';
+import { Link } from 'react-router-dom';
 import { CiMenuBurger } from 'react-icons/ci';
+import './Navbar.css';
 
 function Navbar() {
   return (
@@ -7,13 +8,25 @@ function Navbar() {
       <header>
         <nav className="left">
           <CiMenuBurger className="mobile" />
-          <img src="/images/logo.svg" alt="logo" />
+          <Link to="/">
+            <img src="/images/logo.svg" alt="logo" />
+          </Link>
           <ul>
-            <li>Collections</li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>About</li>
-            <li>Contact</li>
+            <Link to="">
+              <li>Collections</li>
+            </Link>
+            <Link to="">
+              <li>Men</li>
+            </Link>
+            <Link to="">
+              <li>Women</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="">
+              <li>Contact</li>
+            </Link>
           </ul>
         </nav>
         <div className="right">

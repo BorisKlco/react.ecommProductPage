@@ -13,6 +13,16 @@ header .left {
   align-items: center;
 }
 
+header .left a {
+  text-decoration: none;
+}
+header .left a:hover li {
+  font-weight: 700;
+  text-decoration: underline var(--Orange);
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 3rem;
+}
+
 header ul {
   margin-left: 2rem;
   display: flex;
@@ -44,7 +54,7 @@ header .profileImg {
   width: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   header {
     padding-inline: 2rem;
   }

@@ -1,12 +1,12 @@
-import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CartContext from './CartContext';
+import Collections from './Collections/Collections';
+import Contact from './Contact/Contact';
 import Landing from './Landing';
 import Navbar from './Navbar/Navbar';
-import Contact from './Contact/Contact';
-import Collections from './Collections/Collections';
 import './style.css';
 
 const queryClient = new QueryClient({

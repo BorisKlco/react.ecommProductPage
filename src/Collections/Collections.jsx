@@ -9,12 +9,15 @@ const Collections = () => {
   const products = result?.data?.data?.main ?? [];
   const category = useParams();
 
+  if (category.id) return (
+      <Collection props={products} category={category} />
+  );
 
   return (
     <>
-      <Collection props={products} category={category} />
+    <h1>This is Collections</h1>
     </>
-  );
+  )
 };
 
 export default Collections;

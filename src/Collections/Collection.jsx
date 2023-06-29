@@ -1,10 +1,5 @@
 const Collection = ({props, category}) => {
-  let items;
-  if (category.id) {
-    items = props.filter(item => item.category === category.id)
-  } else {
-    items = props
-  }
+  const items = props.filter(item => item.category === category.id)
 
     return (
         <>

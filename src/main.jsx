@@ -15,7 +15,7 @@ const App = () => {
       <CartContext.Provider value={cart}>
         <Navbar />
         <Routes>
-          <Route path="/collections" element={<Collections />} />
+          <Route path="/collections/:id?" element={<Collections />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Landing />} />
         </Routes>

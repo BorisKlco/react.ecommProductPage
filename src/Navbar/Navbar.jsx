@@ -12,7 +12,7 @@ function Navbar() {
             <img src="/images/logo.svg" alt="logo" />
           </Link>
           <ul>
-            <Link to="">
+            <Link to="/collections">
               <li>Collections</li>
             </Link>
             <Link to="">
@@ -21,10 +21,10 @@ function Navbar() {
             <Link to="">
               <li>Women</li>
             </Link>
-            <Link to="/about">
-              <li>About</li>
+            <Link to="/">
+              <li>Kids</li>
             </Link>
-            <Link to="">
+            <Link to="/contact">
               <li>Contact</li>
             </Link>
           </ul>

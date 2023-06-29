@@ -1,28 +1,18 @@
-import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import Men from './Men';
-import Women from './Women';
-import Kids from './Kids';
+import { useParams } from 'react-router-dom';
 import fetchData from '../fetchData';
+import Collection from './Collection';
+import "./Collections.css";
 
 const Collections = () => {
   const result = useQuery(['data'], fetchData);
-  const catergory = useParams();
+  const products = result?.data?.data?.main ?? [];
+  const category = useParams();
 
-  console.log(result);
 
-  console.log(catergory);
   return (
     <>
-      {catergory.id == 'men' ? (
-        <Men />
-      ) : catergory.id == 'women' ? (
-        <Women />
-      ) : catergory.id == 'kids' ? (
-        <Kids />
-      ) : (
-        <h1>This is Collections</h1>
-      )}
+      <Collection props={products} category={category} />
     </>
   );
 };

@@ -1,0 +1,5 @@
+.product {
+    height: 32rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

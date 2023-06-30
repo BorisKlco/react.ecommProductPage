@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { CiMenuBurger } from 'react-icons/ci';
-import './Navbar.css';
+import { Link } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
+import "./Navbar.css";
 
 function Navbar() {
   return (

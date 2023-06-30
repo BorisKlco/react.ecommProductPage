@@ -3,3 +3,18 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.collections {
+    padding:3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.collectionKids {
+    grid-column: 1 / span 2;
+}
+
+.collections img {
+    max-width: 100%;
+}

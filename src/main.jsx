@@ -21,18 +21,20 @@ const queryClient = new QueryClient({
 const App = () => {
   const cart = useState(null);
   return (
-    <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
-        <CartContext.Provider value={cart}>
-          <Navbar />
-          <Routes>
-            <Route path="/collections/:id?" element={<Collections />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/" element={<Landing />} />
-          </Routes>
-        </CartContext.Provider>
-      </QueryClientProvider>
-    </BrowserRouter>
+    <div className="p-6 m-6">
+      <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+          <CartContext.Provider value={cart}>
+            <Navbar />
+            <Routes>
+              <Route path="/collections/:id?" element={<Collections />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Landing />} />
+            </Routes>
+          </CartContext.Provider>
+        </QueryClientProvider>
+      </BrowserRouter>
+    </div>
   );
 };
 createRoot(document.getElementById("root")).render(<App />);

@@ -25,7 +25,7 @@ const Collections = () => {
           alt=""
         />
       </div>
-      <div className="collectionKids">
+      <div className="collection kids">
         <img
           src="https://img01.ztat.net/banner/84090e6b29074e27b26658ee389bc935/dd3cf8f395aa4829a2e5a762281c6f02.jpg"
           alt=""

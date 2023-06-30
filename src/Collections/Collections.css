@@ -11,10 +11,24 @@
     gap: 1rem;
 }
 
-.collectionKids {
+.collections .kids {
     grid-column: 1 / span 2;
 }
 
 .collections img {
     max-width: 100%;
+}
+
+.collection {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.text {
+    color:white;
+    font-size: 6rem;
+    position: absolute;
+    user-select: none;
 }
